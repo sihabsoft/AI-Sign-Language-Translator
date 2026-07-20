@@ -1,7 +1,7 @@
 """
 utils.py
 --------
-Shared helper functions for the AI Powered Sign Language Translator.
+Shared helper functions for the AI Powered Sign Language Translator krishano.
 
 Contains:
     - HandDetector : hand detection that works with BOTH the legacy
