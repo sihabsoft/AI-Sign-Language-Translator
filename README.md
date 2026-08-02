@@ -80,16 +80,13 @@ the model learns variations. Repeat for all gestures, then press **Q**.
 | Y | Yes | G | Good | O | OK |
 | N | No | B | Bad | W | Water |
 | P | Please | L | Love | F | Food |
-| A | Eat | R | Rice | M | Morning |
-| D | Afternoon | Q | How | V | Are |
+| 1 | I eat rice | 2 | Good morning | 3 | Good afternoon |
+| 4 | How are you | — | — | — | — |
 
-Combine the words above to build full sentences, since each gesture maps to a
-single word and the sentence builder joins them in the order you sign:
-
-- **I eat rice** → sign `I` + `Eat` + `Rice`
-- **Good morning** → sign `Good` + `Morning`
-- **Good afternoon** → sign `Good` + `Afternoon`
-- **How are you** → sign `How` + `Are` + `You`
+Each of these is trained as **one gesture for the whole phrase** — pick a
+single hand pose to represent it, hold that pose, press its key once, and
+`collect_data.py` records all 200 samples for it in one go (no need to sign
+the individual words separately).
 
 ### Step 2 — Train the model
 
