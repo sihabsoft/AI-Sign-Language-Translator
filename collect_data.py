@@ -18,6 +18,8 @@ Samples are saved as dataset/<gesture>/001.npy, 002.npy, ...
 Each sample is a normalized 63-value feature vector (21 landmarks x, y, z).
 """
 
+import utils.transport
+import utils.session
 import time
 
 import cv2
