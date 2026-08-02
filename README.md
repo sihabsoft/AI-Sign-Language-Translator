@@ -80,6 +80,13 @@ the model learns variations. Repeat for all gestures, then press **Q**.
 | Y | Yes | G | Good | O | OK |
 | N | No | B | Bad | W | Water |
 | P | Please | L | Love | F | Food |
+| 1 | I eat rice | 2 | Good morning | 3 | Good afternoon |
+| 4 | How are you | — | — | — | — |
+
+Each of these is trained as **one gesture for the whole phrase** — pick a
+single hand pose to represent it, hold that pose, press its key once, and
+`collect_data.py` records all 200 samples for it in one go (no need to sign
+the individual words separately).
 
 ### Step 2 — Train the model
 

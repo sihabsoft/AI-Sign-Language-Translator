@@ -46,6 +46,10 @@ GESTURES = {
     "ok":     "o",
     "water":  "w",
     "food":   "f",
+    "i_eat_rice":     "1",
+    "good_morning":   "2",
+    "good_afternoon": "3",
+    "how_are_you":    "4",
 }
 
 SAMPLES_PER_GESTURE = 200
